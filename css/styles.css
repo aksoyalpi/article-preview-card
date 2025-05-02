@@ -1,0 +1,113 @@
+body {
+  display: grid;
+  place-content: center;
+  background-color: hsl(212, 23%, 69%);
+  font-family: "Manrope", serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: hsl(214, 17%, 51%);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 12px;
+}
+
+.product-pic {
+  border-radius: 12px 12px 0 0;
+  height: 250px;
+  object-fit: cover;
+}
+
+.body {
+  padding: 20px 30px 10px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.body .heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  margin-bottom: 0;
+}
+.body .description {
+  font-size: 17px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.footer img {
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+}
+.footer .share-not-active {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.share-icon {
+  justify-self: flex-end;
+  background-color: hsl(210, 46%, 95%);
+  padding: 10px;
+  border-radius: 100px;
+  height: 20px;
+  width: 20px;
+  margin-left: auto;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+}
+
+.active-footer {
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 0 0 12px 12px;
+  padding: 10px 40px 10px 40px;
+}
+.active-footer ion-icon {
+  height: 25px;
+  width: 25px;
+  color: hsl(210, 46%, 95%);
+}
+.active-footer p {
+  font-size: 16px;
+}
+
+.active {
+  background-color: hsl(214, 17%, 51%);
+  color: hsl(210, 46%, 95%);
+}
+
+.share-icon:hover {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(210, 46%, 95%);
+}
+
+.hidden {
+  display: none;
+}
+
+.name-container {
+  display: grid;
+}
+.name-container .name {
+  margin-bottom: -10px;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+/*# sourceMappingURL=styles.css.map */

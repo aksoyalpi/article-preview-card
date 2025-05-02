@@ -1,0 +1,121 @@
+@use "colors";
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: colors.$gray-blue;
+    font-family: "Manrope", serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: colors.$desaturated-dark-blue;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.product-pic {
+    border-radius: 12px 12px 0 0;
+    height: 250px;
+    object-fit: cover;
+}
+
+.body {
+    padding: 20px 30px 10px 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    
+    .heading {
+        font-size: 20px;
+        font-weight: 700;
+        color: colors.$dark-gray-blue;
+        margin-bottom: 0;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+    img {
+        border-radius: 100px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .share-not-active {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+
+.share-icon {
+    justify-self: flex-end;
+    background-color: colors.$light-gray-blue;
+    padding: 10px;
+    border-radius: 100px;
+    height: 20px;
+    width: 20px;
+    margin-left: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.active-footer {
+    background-color: colors.$dark-gray-blue;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0 0 12px 12px;
+    padding: 10px 40px 10px 40px;
+
+    ion-icon {
+        height: 25px;
+        width: 25px;
+        color: colors.$light-gray-blue;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.active {
+    background-color: colors.$desaturated-dark-blue;
+    color: colors.$light-gray-blue;
+}
+
+.share-icon:hover {
+    background-color: colors.$dark-gray-blue;
+    color: colors.$light-gray-blue;
+}
+
+.hidden {
+    display: none;
+}
+
+.name-container {
+    display: grid;
+
+    .name {
+        margin-bottom: -10px;
+        font-weight: 700;
+        color: colors.$dark-gray-blue;
+    }
+}
