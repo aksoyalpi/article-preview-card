@@ -3,7 +3,9 @@
 body {
     display: grid;
     place-content: center;
-    background-color: colors.$gray-blue;
+    justify-content: center;
+    height: 100vh;
+    background-color: colors.$light-gray-blue;
     font-family: "Manrope", serif;
     font-size: 13px;
     font-weight: 500;
@@ -15,32 +17,33 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 400px;
+    max-width: 320px;
     background-color: white;
     border-radius: 12px;
+    box-shadow: 5px 5px 10px colors.$gray-blue;
 }
 
 .product-pic {
     border-radius: 12px 12px 0 0;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
 }
 
 .body {
-    padding: 20px 30px 10px 35px;
+    padding: 20px 30px 10px 32px;
     display: flex;
     flex-direction: column;
     gap: 0;
     
     .heading {
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 700;
         color: colors.$dark-gray-blue;
         margin-bottom: 0;
     }
 
     .description {
-        font-size: 17px;
+        font-size: 13px;
     }
 }
 
@@ -65,7 +68,6 @@ body {
 
 
 .share-icon {
-    justify-self: flex-end;
     background-color: colors.$light-gray-blue;
     padding: 10px;
     border-radius: 100px;
@@ -74,14 +76,14 @@ body {
     margin-left: auto;
     position: absolute;
     bottom: 20px;
-    right: 40px;
+    right: 20px;
 }
 
 .active-footer {
     background-color: colors.$dark-gray-blue;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     border-radius: 0 0 12px 12px;
     padding: 10px 40px 10px 40px;
 
@@ -117,5 +119,67 @@ body {
         margin-bottom: -10px;
         font-weight: 700;
         color: colors.$dark-gray-blue;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (min-width: 800px) {
+    .container {
+        flex-direction: row;
+        max-width: none;
+        width: 700px;
+    }
+
+    .body {
+        padding-right: 40px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .product-pic {
+        width: 250px;
+        border-radius: 12px 0 0 12px;
+        height: 100%;
+    }
+
+    .active-footer {
+        padding: 0 10px 0 10px;
+        border-radius: 12px;
+        justify-content: center;
+        width: 200px;
+        position: absolute;
+        bottom: 75px;
+        right: -70px;
+        z-index: 1;
+    }
+
+    .active-footer::after {
+        content: " ";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: colors.$dark-gray-blue transparent transparent transparent;
+    }
+
+    .footer-desktop {
+        display: flex;
     }
 }
