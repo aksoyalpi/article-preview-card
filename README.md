@@ -27,7 +27,8 @@ Users should be able to:
 
 ![Screenshot Desktop](image-6.png)
 ![Mobile Screenshot](image-4.png)
-![Mobile active screenshot](image-5.png)
+![image](https://github.com/user-attachments/assets/a9b016b9-4e69-4a7a-bbf6-7abc00d5a1c2)
+
 
 ### Links
 
